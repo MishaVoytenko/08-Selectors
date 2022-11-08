@@ -45,6 +45,7 @@ form {
   align-items: center;
   padding: 14px;
   transition: all 0.1s ease-in;
+  gap: 5px;
 }
 
 .item:nth-child(odd) {
@@ -64,13 +65,35 @@ form {
 }
 
 .item:hover {
-  background: #625e77;
+  background-color: #625e77;
+  border: 3px solid #ffffff;
 }
 
-/* .item:active {
+.footer {
+  height: 45px;
+  width: 534px;
+  margin: 45px auto 0;
+  padding: 12px;
+  background: #4a4f56;
+  text-align: center;
+}
+
+.text-footer {
+  font-family: "Roboto", "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ff8984;
+}
+
+/* :checked + p + p {
   text-decoration: line-through;
 } */
 
-.item:checked {
-  background: #fc0;
+:checked ~ p {
+  text-decoration: line-through;
+}
+
+:checked ~ p::before {
+  text-decoration: line-through;
 }
