@@ -44,7 +44,7 @@ form {
   color: #ffffff;
   align-items: center;
   padding: 14px;
-  transition: all 0.1s ease-in;
+  transition: all 0.3s ease-in;
   gap: 5px;
 }
 
@@ -66,7 +66,8 @@ form {
 
 .item:hover {
   background-color: #625e77;
-  border: 3px solid #ffffff;
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
 }
 
 .footer {
